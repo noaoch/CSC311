@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="the <= 0.5\ngini = 0.479\nsamples = 2286\nvalue = [906, 1380]\nclass = real"] ;
+1 [label="hillary <= 0.5\ngini = 0.451\nsamples = 1934\nvalue = [664, 1270]\nclass = real"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="donald <= 0.5\ngini = 0.428\nsamples = 1813\nvalue = [562, 1251]\nclass = real"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+132 [label="(...)"] ;
+2 -> 132 ;
+237 [label="donald <= 0.5\ngini = 0.265\nsamples = 121\nvalue = [102, 19]\nclass = fake"] ;
+1 -> 237 ;
+238 [label="(...)"] ;
+237 -> 238 ;
+251 [label="(...)"] ;
+237 -> 251 ;
+270 [label="donald <= 0.5\ngini = 0.43\nsamples = 352\nvalue = [242, 110]\nclass = fake"] ;
+0 -> 270 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+271 [label="year <= 0.5\ngini = 0.378\nsamples = 265\nvalue = [198, 67]\nclass = fake"] ;
+270 -> 271 ;
+272 [label="(...)"] ;
+271 -> 272 ;
+335 [label="(...)"] ;
+271 -> 335 ;
+336 [label="in <= 0.5\ngini = 0.5\nsamples = 87\nvalue = [44, 43]\nclass = fake"] ;
+270 -> 336 ;
+337 [label="(...)"] ;
+336 -> 337 ;
+376 [label="(...)"] ;
+336 -> 376 ;
+}
